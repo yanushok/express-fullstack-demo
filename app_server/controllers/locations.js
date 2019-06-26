@@ -1,11 +1,11 @@
-exports.homeList = (req, res) => {
+export const homeList = (req, res) => {
     res.render('index', { title: 'Home' });
 };
 
-exports.locationInfo = (req, res) => {
+export const locationInfo = (req, res) => {
     res.render('index', { title: 'Location info' });
 };
 
-exports.addReview = (req, res) => {
+export const addReview = (req, res) => {
     res.render('index', { title: 'Add review' });
 };

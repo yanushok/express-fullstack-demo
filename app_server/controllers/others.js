@@ -1,3 +1,3 @@
-exports.about = (req, res) => {
+export const about = (req, res) => {
     res.render('index', { title: 'About' });
 };

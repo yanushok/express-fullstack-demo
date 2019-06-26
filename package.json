@@ -3,23 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start:prod": "node ./bin/www",
-    "start": "npx nodemon ./bin/www"
+    "start:prod": "node index.js",
+    "start": "npx nodemon index.js"
   },
   "engines": {
     "node": "~8.11.4",
     "npm": "~6.5.0"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.3",
-    "debug": "~4.1.0",
-    "express": "~4.16.4",
-    "http-errors": "~1.7.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "esm": "^3.2.25",
+    "express": "~4.17.1",
+    "http-errors": "~1.7.3",
     "morgan": "~1.9.1",
     "node-sass-middleware": "0.11.0",
-    "pug": "2.0.3"
+    "pug": "2.0.4"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.19.1"
   }
 }

@@ -1,12 +1,14 @@
-const express = require('express');
-const router = express.Router();
-const ctrlLocations = require('../controllers/locations');
-const ctrlOthers = require('../controllers/others');
+import { Router } from 'express';
 
-router.get('/', ctrlLocations.homeList);
-router.get('/location', ctrlLocations.locationInfo);
-router.get('/location/review/new', ctrlLocations.addReview);
+import * as LocationsController from '../controllers/locations';
+import * as OthersController from '../controllers/others';
 
-router.get('/about', ctrlOthers.about);
+const router = Router();
 
-module.exports = router;
+router.get('/', LocationsController.homeList);
+router.get('/location', LocationsController.locationInfo);
+router.get('/location/review/new', LocationsController.addReview);
+
+router.get('/about', OthersController.about);
+
+export default router;
